@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers’ Resource Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Farmers Portal Logo" class="logo">
+        <h1>Farmers’ Resource Portal</h1>
+        <p>Your AI-powered guide to better farming and Dorper sheep care</p>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to the Farmers’ Resource Portal</h2>
+        <p>Get instant farming advice, tips, and guidance with the power of AI.</p>
+    </section>
+
+    <section class="facts">
+        <h2>Did You Know?</h2>
+        <div id="facts-container">Loading AI-generated farming tips...</div>
+    </section>
+
+    <section class="chatbot">
+        <h2>Ask Our AI Farming Assistant</h2>
+        <div id="chatbox">
+            <div id="messages"></div>
+            <input type="text" id="userInput" placeholder="Ask about Dorper sheep, feeding, or crops...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div id="formResponse"></div>
+    </section>
+
+    <footer>
+        <p>© 2025 Farmers’ Resource Portal | Empowering Farmers with AI</p>
+    </footer>
+</body>
+</html>
